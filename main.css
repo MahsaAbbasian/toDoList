@@ -1,0 +1,135 @@
+.first-container {
+    margin: auto;
+    display: flex;
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #d8d8d8;
+    background-color: black;
+
+}
+
+.inner-container {
+    height: 350px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #d8d8d8;
+    background-color: red;
+}
+
+.task {
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    background-color: #4f5879;
+}
+
+.newTask {
+
+    display: flex;
+    flex: 7;
+    margin-left: 10px;
+    background-color: #4f5879;
+}
+
+.newTaskText {
+    background-color: #4f5879;
+    border: none;
+    color: #ffffff;
+}
+
+:placeholder-shown {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+.plus {
+    flex: 1.2;
+    background-color: yellow;
+    position: relative;
+
+}
+
+.Submit {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    border-style: none;
+}
+
+.horizontal {
+    width: 10%;
+    height: 80%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vertical {
+    width: 10%;
+    height: 80%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)rotate(90deg);
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: column;
+    background-color: #d8d8d8;
+    height: 100%;
+}
+
+.rowTask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:aqua ;
+    height: 60px;
+}
+.checkbox{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.deleteButton {
+    display: flex;
+}
+
+.delete {
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex: 2;
+    border-radius: 5px;
+    border-color: #b15351;
+    background-color: #b15351;
+}
