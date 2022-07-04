@@ -13,10 +13,10 @@
             <!-- task section  -->
             <div class="task">
                 <div class="newTask">
-                    <input class="newTaskText" type="text" placeholder="New Task">
+                    <input class="newTaskText" id="activeTextInput" type="text" placeholder="New Task" onchange="changeToDoText(this.value)">
                 </div>
                 <div class="plus">
-                    <button class="Submit">
+                    <button class="Submit" onclick="addToDo()">
                         <div class="horizontal">
                         </div>
                         <div class="vertical">
