@@ -1,6 +1,6 @@
 console.log("hello");
 let activeTextValue = "";
-let toDoList = [];
+let toDoList = ["Mahsa", "Aysa", "Madar", "car"];
 let taskRow = "";
 const changeToDoText = (textValue) => {
   console.log(textValue);
@@ -12,18 +12,25 @@ const addToDo = () => {
 
   document.getElementById("activeTextInput").innerHTML = "";
   console.log(toDoList);
+  activeTextValue = "";
+};
 
-  taskRow =
-    taskRow +
-    `
+const renderList = () => {
+  toDoList.map((item) => {
+    taskRow =
+      taskRow +
+      `
   <div class="rowTask">
       <div class="checkbox">
           <input type="checkbox" onclick="taskdescription" class="taskBox">   
       </div>
       <div class="title">
-          ${activeTextValue}
+          ${item}
       </div>
   </div>`;
+  });
+
   document.getElementById("listRow").innerHTML = taskRow;
-  activeTextValue = "";
 };
+
+renderList();
